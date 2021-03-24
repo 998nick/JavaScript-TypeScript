@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container {
+        background-color: #fff;
+        width: 500px;
+        height: 200px;
+        line-height: 1.5em;
+        margin: 50px auto;
+        padding: 1.0em;
+        border-radius: 10px;
+        text-align: center;
+     
+    }
+
+    .clock {
+       font-size: 3em;
+    }
+
+    .paused {
+        color: red;
+    }
+
+
+    body {
+        background-color: rgb(17, 86,102);
+    }
+</style>
+
+<body>
+
+  <div class="container">
+      <h1>Meu timer</h1>
+      <p class="clock">00:00:00</p>
+      <p>
+          <button class="init">iniciar</button>
+          <button class="pause">pausar</button>
+          <button class="stop">zerar</button>
+      </p>
+  </div>
+
+    <script src="timer.js"></script>
+</body>
+
+</html>
