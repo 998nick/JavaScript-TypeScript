@@ -1,7 +1,7 @@
 
 
 function ValidateID(cpf) {
-    Object.defineProperty(this, 'cpfClean', {
+    Object.defineProperty(this, 'cleanCPF', {
         enumerable: true,
        get: function() {
            return cpf.replace(/\D+/g, '')
@@ -11,17 +11,17 @@ function ValidateID(cpf) {
 
 
 ValidateID.prototype.validate = function() {
-    if(typeof this.cpfClean === undefined) return false
-    if(this.cpfClean.length !== 11) return false
+    if(typeof this.cleanCPF === undefined) return false
+    if(this.cleanCPF.length !== 11) return false
     if(this.isSequence()) return false
 
-    const partialCpf = this.cpfClean.slice(0, -2)
+    const partialCpf = this.cleanCPF.slice(0, -2)
     const firstDigit = this.createDigit(partialCpf)
     const secondDigit = this.createDigit(partialCpf + firstDigit)
 
     const newCpf = String(partialCpf + firstDigit + secondDigit)
     
-    return newCpf === this.cpfClean
+    return newCpf === this.cleanCPF
 }
 
 
@@ -40,8 +40,8 @@ ValidateID.prototype.createDigit = function(partialCpf) {
 }
 
 ValidateID.prototype.isSequence = function() {
-   const sequence  = this.cpfClean[0].repeat(this.cpfClean.length)
-   return sequence === this.cpfClean
+   const sequence  = this.cleanCPF[0].repeat(this.cleanCPF.length)
+   return sequence === this.cleanCPF
 }
 
 const cpf = new ValidateID('705.484.450-52')

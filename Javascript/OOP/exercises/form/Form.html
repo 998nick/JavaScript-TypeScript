@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Formulário de cadastro</h1>
+        <ul>
+            <li>Nenhum campo deve estar vazio</li>
+            <li>Usuário só poderá conter letras e/ou números</li>
+            <li>Campo usuário deverá ter entre 3 á 12 caracteres</li>
+            <li>Senha precisa ter entre 6 á 12 caracteres</li>
+        </ul>
+
+
+
+        <form action="" method="POST" class="form">
+            <label>Nome</label>
+            <input type="text" class="name validate">
+            <label>Sobrenome</label>
+            <input type="text" class="surname validate">
+            <label>CPF</label>
+            <input type="text" class="cpf validate">
+            <label>Usuário</label>
+            <input type="text" class="username validate">
+            <label>Senha</label>
+            <input type="password" class="password validate">
+            <label>Repetir Senha</label>
+            <input type="password" class="repeat-password validate">
+    <button type="submit">Enviar</button>
+        </form>
+
+    </div>
+
+ 
+    <script src="../validateID_class.js"></script>
+    <script src="./assets/main.js"></script>
+</body>
+
+</html>
