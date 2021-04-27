@@ -1,0 +1,32 @@
+[
+{
+    "name": "Miguel",
+    "email": "miguel@gmail.com",
+    "salary": 2000,
+    "state": "MG",
+    "company": "Facebook",
+    "age": 24,
+    "gender": "",
+    "cpf": "234.456-789-34"
+},
+{
+    "name": "Antonia",
+    "email": "antonia@gmail.com",
+    "salary": 1200,
+    "state": "RJ",
+    "company": "Ortobom",
+    "age": 30,
+    "gender": "F",
+    "cpf": "235.789.478-50"
+},
+{
+    "name": "Felipe",
+    "email": "felipe@gmail.com",
+    "salary": 1300,
+    "state": "SP",
+    "company": "Fisk",
+    "age": 20,
+    "gender": "M",
+    "cpf": "576.566-789-30"
+}
+]
